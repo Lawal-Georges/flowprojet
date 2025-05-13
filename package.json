@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prisma:send": "prisma db push",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
